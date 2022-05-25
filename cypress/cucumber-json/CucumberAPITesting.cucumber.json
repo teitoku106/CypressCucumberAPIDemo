@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "API testing with https://gorest.co.in/",
+    "line": 1,
+    "id": "api-testing-with-https://gorest.co.in/",
+    "tags": [],
+    "uri": "CucumberAPITesting.feature",
+    "elements": [
+      {
+        "id": "api-testing-with-https://gorest.co.in/;testcase-1---create-a-new-account-using-post-method-and-verify-the-account-exist-on-database-using-get-method",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Testcase 1 - Create a new account using POST METHOD and verify the account exist on Database using GET METHOD",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "The user create a new account using POST METHOD",
+            "result": {
+              "status": "passed",
+              "duration": 899000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "A new account is create with a unique ID number",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "The user verify the account exist on Database using GET METHOD",
+            "result": {
+              "status": "passed",
+              "duration": 354000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-with-https://gorest.co.in/;testcase-2---delete-the-above-account-using-delete-method-and-verify-it-is-no-longer-exist-on-database-using-get-method",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Testcase 2 - Delete the above account using DELETE METHOD and verify it is no longer exist on Database using GET METHOD",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "The user Delete the above account using DELETE METHOD",
+            "result": {
+              "status": "passed",
+              "duration": 221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The account will be delete from Database",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user verify the account is no longer exist on Database using GET METHOD",
+            "result": {
+              "status": "passed",
+              "duration": 319000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

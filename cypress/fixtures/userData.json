@@ -1,0 +1,8 @@
+{
+  "name":"Tam Auto",
+  "gender":"male",
+  "status":"active",
+  "website":"https://gorest.co.in/public/v1/users/",
+  "notFoundMessage": "Resource not found",
+  "accessToken": "b144af8c622116995452b6a75b2491d8af19d6b02ebf40fc8aece13da79930a0"
+}
