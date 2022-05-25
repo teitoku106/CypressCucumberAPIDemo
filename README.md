@@ -12,6 +12,7 @@ Instruction:
 7. The report file will be inside ./crypress/cucumber-report and be name as [ index.htlm ] (Screenshot 3)
 
 
+CucumberAPITesting.feature (Screenshot 1)
 <img width="1074" alt="image" src="https://user-images.githubusercontent.com/73167411/170354199-0c39c75c-5877-4291-aaa8-2572f532a5ba.png">
 
 Folder structure (Screenshot 2)
