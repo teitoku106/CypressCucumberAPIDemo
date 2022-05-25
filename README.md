@@ -2,6 +2,8 @@
 
 This repo contains API Testing with https://gorest.co.in/ using Cypress & Cucumber in Javascript.
 
+Author: Tam Pham (Kyle)
+
 Instruction:
 
 1. Clone this Repo and open using Visual Studio Code
