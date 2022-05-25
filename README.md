@@ -11,4 +11,8 @@ Instruction:
 5. Open Terminal inside Visual Studio Code again and run [ npm run cy:report ] in order to generate a new report file
 6. The report file will be inside ./crypress/cucumber-report and be name as [ index.htlm ]
 
+Cucumber Report
+
 <img width="1493" alt="image" src="https://user-images.githubusercontent.com/73167411/170353192-e5c1c05a-afd5-4ff5-bfdd-b32b4a3e0486.png">
+
+<img width="1074" alt="image" src="https://user-images.githubusercontent.com/73167411/170354199-0c39c75c-5877-4291-aaa8-2572f532a5ba.png">
