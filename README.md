@@ -1,4 +1,4 @@
-# CypressCucumberAPIDemo
+# Cypress-Cucumber-API-Demo
 
 This repo contains API Testing with https://gorest.co.in/ using Cypress & Cucumber in Javascript.
 
