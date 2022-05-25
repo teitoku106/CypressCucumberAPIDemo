@@ -5,7 +5,7 @@ This repo contains API Testing with https://gorest.co.in/ using Cypress & Cucumb
 Instruction:
 
 1. Clone this Repo and open using Visual Studio Code
-2. Open Terminal in Visual Studio Code and run [ npm install ] to install required packages (Make sure your machine got node.js, more information: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+2. Open Terminal inside Visual Studio Code and run [ npm install ] to install required packages (Make sure your machine got node.js, more information: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 4. Run command [ npx cypress run ] to start Cypress in Headless mode, let it run and finish by itself
 5. After Cypress finished with the test, it will generate a Video file contains the run + generate a report file in .json (Screenshot 2)
 6. In Terminal, run command [ npm run cy:report ] in order to generate a new report file 
