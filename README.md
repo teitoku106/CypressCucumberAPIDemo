@@ -11,7 +11,7 @@ Instruction:
 4. Open Terminal inside Visual Studio Code, Run command [ npx cypress run ] to start Cypress in Headless mode, let it run and finish by itself
 5. After Cypress finished with the test, it will generate a Video file contains the run + generate a report file name as CucumberAPITesting.cucumber.json (Screenshot 2)
 6. In Terminal, run command [ npm run cy:report ] in order to generate a new report file in .html extension 
-7. The report file will be inside ./crypress/cucumber-report and be name as [ index.htlm ], open it with a browser of your choice (Screenshot 3)
+7. The report file will be inside ./crypress/cucumber-report and be name as [ index.html ], open it with a browser of your choice (Screenshot 3)
 
 
 CucumberAPITesting.feature (Screenshot 1)
@@ -21,4 +21,5 @@ Folder structure (Screenshot 2)
 <img width="1091" alt="image" src="https://user-images.githubusercontent.com/73167411/170359567-4c727045-15e2-4bbf-a054-e1ed7f047d68.png">
 
 Cucumber Report (Screenshot 3)
-<img width="1493" alt="image" src="https://user-images.githubusercontent.com/73167411/170353192-e5c1c05a-afd5-4ff5-bfdd-b32b4a3e0486.png">
+<img width="1483" alt="image" src="https://user-images.githubusercontent.com/73167411/170450416-a7ddb1a2-ff70-4e6d-a6c4-61aad17e9ca0.png">
+
