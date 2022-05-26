@@ -14,7 +14,7 @@ When("The user create a new account using POST METHOD", () => {
   randomTestEmail = randomText + "@gmail.com";
 
   cy.fixture("userData").then((data) => {
-    //1. create user (POST)
+    //Create a new user using POST METHOD
     cy.request({
       method: "POST",
       url: "https://gorest.co.in/public/v1/users/",
@@ -28,6 +28,7 @@ When("The user create a new account using POST METHOD", () => {
         status: data.status,
       },
     }).then((res) => {
+      //Verify the Response from Server
       expect(res.status).to.eq(201);
       expect(res.body.data).has.property("email", randomTestEmail);
       expect(res.body.data).has.property("name", data.name);
@@ -46,12 +47,14 @@ Then("A new account is create with a unique ID number", () => {
 And("The user verify the account exist on Database using GET METHOD", () => {
   cy.fixture("userData").then((data) => {
     cy.request({
+      //Get the User Data from server using GET METHOD
       method: "GET",
       url: data.website + userID,
       headers: {
         Authorization: "Bearer " + data.accessToken,
       },
     }).then((res) => {
+      //Verify the Response from Server
       expect(res.status).to.eq(200);
       expect(res.body.data).has.property("id", userID);
       expect(res.body.data).has.property("name", data.name);
@@ -63,7 +66,7 @@ And("The user verify the account exist on Database using GET METHOD", () => {
 
 When("The user Delete the above account using DELETE METHOD", () => {
   cy.fixture("userData").then((data) => {
-    //1. create user (POST)
+    //Delete the Above user using DELETE METHOD
     cy.request({
       method: "DELETE",
       url: data.website + userID,
@@ -71,6 +74,7 @@ When("The user Delete the above account using DELETE METHOD", () => {
         Authorization: "Bearer " + data.accessToken,
       },
     }).then((res) => {
+      //Verify the Response from Server
       expect(res.status).to.eq(204);
     });
   });
@@ -89,6 +93,7 @@ And(
   () => {
     cy.fixture("userData").then((data) => {
       cy.request({
+        //Get the User Data from server using GET METHOD
         method: "GET",
         url: data.website + userID,
         failOnStatusCode: false,
@@ -96,6 +101,7 @@ And(
           Authorization: "Bearer " + data.accessToken,
         },
       }).then((res) => {
+        //Verify the Response from Server
         expect(res.status).to.eq(404);
         expect(res.body.data).has.property("message", data.notFoundMessage);
       });
