@@ -8,7 +8,7 @@ Instruction:
 
 1. Clone this Repo and open using Visual Studio Code
 2. Open Terminal inside Visual Studio Code and run [ npm install ] to install required packages (Make sure your machine got node.js + npm, more information: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-4. Run command [ npx cypress run ] to start Cypress in Headless mode, let it run and finish by itself
+4. Open Terminal inside Visual Studio Code, Run command [ npx cypress run ] to start Cypress in Headless mode, let it run and finish by itself
 5. After Cypress finished with the test, it will generate a Video file contains the run + generate a report file name as CucumberAPITesting.cucumber.json (Screenshot 2)
 6. In Terminal, run command [ npm run cy:report ] in order to generate a new report file in .html extension 
 7. The report file will be inside ./crypress/cucumber-report and be name as [ index.htlm ], open it with a browser of your choice (Screenshot 3)
