@@ -6,7 +6,7 @@ let userID = "";
 let randomTestEmail = "";
 let randomText = "";
 
-When("The user create a new account using POST METHOD", () => {
+When("The user creates a new account using POST METHOD", () => {
   //Generate a Random Email
   let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
   for (var i = 0; i < 10; i++)
@@ -14,7 +14,7 @@ When("The user create a new account using POST METHOD", () => {
   randomTestEmail = randomText + "@gmail.com";
 
   cy.fixture("userData").then((data) => {
-    //Create a new user using POST METHOD
+    //1. create user (POST)
     cy.request({
       method: "POST",
       url: "https://gorest.co.in/public/v1/users/",
@@ -28,7 +28,6 @@ When("The user create a new account using POST METHOD", () => {
         status: data.status,
       },
     }).then((res) => {
-      //Verify the Response from Server
       expect(res.status).to.eq(201);
       expect(res.body.data).has.property("email", randomTestEmail);
       expect(res.body.data).has.property("name", data.name);
@@ -40,21 +39,19 @@ When("The user create a new account using POST METHOD", () => {
   });
 });
 
-Then("A new account is create with a unique ID number", () => {
+Then("A new account is created with a unique ID number", () => {
   cy.log("The User ID number is: " + userID);
 });
 
-And("The user verify the account exist on Database using GET METHOD", () => {
+And("The user will verify the account exist on Database using GET METHOD", () => {
   cy.fixture("userData").then((data) => {
     cy.request({
-      //Get the User Data from server using GET METHOD
       method: "GET",
       url: data.website + userID,
       headers: {
         Authorization: "Bearer " + data.accessToken,
       },
     }).then((res) => {
-      //Verify the Response from Server
       expect(res.status).to.eq(200);
       expect(res.body.data).has.property("id", userID);
       expect(res.body.data).has.property("name", data.name);
@@ -64,9 +61,9 @@ And("The user verify the account exist on Database using GET METHOD", () => {
   });
 });
 
-When("The user Delete the above account using DELETE METHOD", () => {
+When("The user deletes the above account using DELETE METHOD", () => {
   cy.fixture("userData").then((data) => {
-    //Delete the Above user using DELETE METHOD
+    //1. create user (POST)
     cy.request({
       method: "DELETE",
       url: data.website + userID,
@@ -74,13 +71,12 @@ When("The user Delete the above account using DELETE METHOD", () => {
         Authorization: "Bearer " + data.accessToken,
       },
     }).then((res) => {
-      //Verify the Response from Server
       expect(res.status).to.eq(204);
     });
   });
 });
 
-Then("The account will be delete from Database", () => {
+Then("The account will be deleted from Database", () => {
   cy.log(
     "The Account with User ID number " +
       userID +
@@ -89,11 +85,10 @@ Then("The account will be delete from Database", () => {
 });
 
 And(
-  "The user verify the account is no longer exist on Database using GET METHOD",
+  "The user will verify the account no longer exist on Database using GET METHOD",
   () => {
     cy.fixture("userData").then((data) => {
       cy.request({
-        //Get the User Data from server using GET METHOD
         method: "GET",
         url: data.website + userID,
         failOnStatusCode: false,
@@ -101,7 +96,6 @@ And(
           Authorization: "Bearer " + data.accessToken,
         },
       }).then((res) => {
-        //Verify the Response from Server
         expect(res.status).to.eq(404);
         expect(res.body.data).has.property("message", data.notFoundMessage);
       });
