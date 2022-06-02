@@ -21,5 +21,5 @@ Folder structure (Screenshot 2)
 <img width="1091" alt="image" src="https://user-images.githubusercontent.com/73167411/170359567-4c727045-15e2-4bbf-a054-e1ed7f047d68.png">
 
 Cucumber Report (Screenshot 3)
-<img width="1483" alt="image" src="https://user-images.githubusercontent.com/73167411/170450416-a7ddb1a2-ff70-4e6d-a6c4-61aad17e9ca0.png">
+<img width="1088" alt="image" src="https://user-images.githubusercontent.com/73167411/171607260-29695a28-25af-46dc-a311-9833983763c6.png">
 
