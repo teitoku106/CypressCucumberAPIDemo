@@ -15,7 +15,7 @@ Instruction:
 
 
 CucumberAPITesting.feature (Screenshot 1)
-<img width="1074" alt="image" src="https://user-images.githubusercontent.com/73167411/170354199-0c39c75c-5877-4291-aaa8-2572f532a5ba.png">
+<img width="1036" alt="image" src="https://user-images.githubusercontent.com/73167411/171606822-3397cdaf-bbec-4223-a60c-ac5e33be0209.png">
 
 Folder structure (Screenshot 2)
 <img width="1091" alt="image" src="https://user-images.githubusercontent.com/73167411/170359567-4c727045-15e2-4bbf-a054-e1ed7f047d68.png">
