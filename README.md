@@ -4,6 +4,8 @@ This repo contains API Testing with https://gorest.co.in/ using Cypress & Cucumb
 
 Author: Tam Pham (Kyle)
 
+----------------------------------------------------------------------------------------------
+
 Instruction:
 
 1. Clone this Repo and open using Visual Studio Code
@@ -13,6 +15,7 @@ Instruction:
 6. In Terminal, run command [ npm run cy:report ] in order to generate a new report file in .html extension 
 7. The report file will be inside ./crypress/cucumber-report and be name as [ index.html ], open it with a browser of your choice (Screenshot 3)
 
+----------------------------------------------------------------------------------------------
 
 CucumberAPITesting.feature (Screenshot 1)
 <img width="1036" alt="image" src="https://user-images.githubusercontent.com/73167411/171606822-3397cdaf-bbec-4223-a60c-ac5e33be0209.png">
